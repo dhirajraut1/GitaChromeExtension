@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/bootstrap.min.css"> -->
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Bhagawat Geeta Sloka</title>
+
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Noto+Sans+Devanagari:wght@200;400;600&display=swap');
+
+
+body {
+  /* width: 420px;
+  height: 400px; */
+  font-family: 'Noto Sans Devanagari', sans-serif;}
+
+div.sloka-container {
+  /* background:linear-gradient(189deg,#fff 19%,#f7fffa 50%);*/
+  color: #4f4141;
+}
+
+img {
+  width: 200pt;
+  opacity: +.98
+}
+
+/* h2 {
+  font-family: 'Yatra One', cursive;
+} */
+
+h3 {
+  line-height: 23pt;
+  /* font-family: 'Yatra One', cursive; */
+  margin: 10px;
+  color: #4f4141;
+  font-weight: 600;
+}
+
+center {
+  padding: 0 25px
+}
+
+p {
+  font-size: 15px;
+}
+
+footer p {
+  font-size: 10px;
+}
+    </style>
+</head>
+
+<body">
+    <div class="container text-center my-auto ">
+        <div class="col-6 mx-auto">
+        <h2 class="p-2">Bhagavad Gita Sloka Fetcher</h2>
+        <img src="https://bhagavadgitaapi.in/slok/krishna.png" alt="">
+        <br>
+        <p>Get the desired sloka from Gita </p>
+        <form>
+            <div class="row d-flex justify-content-center">
+                <div class="col-4">
+                    <!-- <label class = "form-label" for="chapter">Select Chapter </label> -->
+                    <select class="form-control" id="chapter" name="chapter" required>
+                        <option value="" selected="selected">Select a Chapter</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <!-- <label class = "form-label" for="sloka">Select Sloka</label> -->
+                    <select class="form-control" id="sloka" min="1" required>
+                        <option value="" selected="selected">Select a Sloka</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pt-2 col-12 p-3">
+                <button class="btn btn-danger" type="submit">Fetch Sloka</button>
+            </div>
+            
+        </form>
+        <div class="text-center p-2 sloka-container" id="sloka-container"></div>
+
+        <footer class="p-2">
+            <p>Made with 🙏 by Dhiraj Raut. <br>
+                Fetched from <a href="https://bhagavadgitaapi.in/" target="_blank">@BhagavadGitaApi</a> </p>
+        </footer>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
