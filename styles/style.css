@@ -1,0 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Noto+Sans+Devanagari:wght@200;400;600&display=swap');
+
+
+body {
+  width: 420px;
+  height: 400px;
+  font-family: 'Noto Sans Devanagari', sans-serif;}
+
+div.sloka-container {
+  /* background:linear-gradient(189deg,#fff 19%,#f7fffa 50%);*/
+  color: #4f4141;
+}
+
+img {
+  width: 200pt;
+  opacity: +.98
+}
+
+/* h2 {
+  font-family: 'Yatra One', cursive;
+} */
+
+h3 {
+  line-height: 23pt;
+  /* font-family: 'Yatra One', cursive; */
+  margin: 10px;
+  color: #4f4141;
+  font-weight: 600;
+}
+
+center {
+  padding: 0 25px
+}
+
+p {
+  font-size: 15px;
+}
+
+footer p {
+  font-size: 10px;
+}

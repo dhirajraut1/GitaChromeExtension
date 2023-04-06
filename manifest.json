@@ -1,0 +1,13 @@
+{
+    "name":"Geeta",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "description":"Geeta Sloks",
+    "action": {
+    "default_popup": "hello.html",
+    "default_icon": "images/gita.png"
+  },
+  "icons":{
+    "128":"images/gita.png"
+  }
+}
