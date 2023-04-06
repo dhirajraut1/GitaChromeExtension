@@ -40,8 +40,7 @@ form.addEventListener('submit', event => {
   const sloka = document.querySelector('#sloka').value;
   const url = `https://bhagavadgitaapi.in/slok/${chapter}/${sloka}`;
 
-
-  //tried code
+  
   // Check if data is already in local storage
   const storedData = localStorage.getItem(`gita${chapter}-${sloka}`);
   if (storedData) {
@@ -58,7 +57,15 @@ form.addEventListener('submit', event => {
           `;
   } else {
     // Data is not in local storage, make API request
-    fetch(url)
+    var headers = {};
+    fetch(url,
+      {
+        method : "GET",
+        mode: 'cors',
+        headers: {
+          'Access-Control-Allow-Origin':'*'
+        }
+    })
       .then(response => response.json())
       .then(data => {
         // Store data in local storage
