@@ -38,7 +38,8 @@ form.addEventListener('submit', event => {
   // const url = `https://bhagavadgitaapi.in/slok/${chapter}/${sloka}`;
   const queryId = `BG${chapter}.${sloka}`;
 
-  
+  //using API CALL
+
   // Check if data is already in local storage
   // const storedData = localStorage.getItem(`gita${chapter}-${sloka}`);
   // if (storedData) {
@@ -68,7 +69,6 @@ form.addEventListener('submit', event => {
   //     .then(data => {
   //       // Store data in local storage
   //       localStorage.setItem(`gita${chapter}-${sloka}`, JSON.stringify(data));
-  //       // Use the data as needed
   //       const slokaText = data.slok;
   //       const formattedSloka = slokaText.replace(/\n/g, '<br>');
   //       const translation = data.siva.et;
@@ -84,20 +84,15 @@ form.addEventListener('submit', event => {
 
 
 
-  // use the local json file 
+  // using the local json file 
 
   fetch('shlokas_limited.json')
     .then(response => response.json())
     .then(data => {
-      // Store data in local storage
-      // localStorage.setItem(`gita${chapter}-${sloka}`, JSON.stringify(data));
-
       // Filter the data based on the user input
       const filteredData = data.filter(item => item.id === queryId);
       console.log(filteredData[0])
 
-
-      // Use the data as needed
       const slokaText = filteredData[0].slok;
       const formattedSloka = slokaText.replace(/\n/g, '<br>');
       const translation = filteredData[0].siva.et;
